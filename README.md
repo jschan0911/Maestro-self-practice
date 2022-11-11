@@ -54,9 +54,11 @@
 </code></pre>
 - [ ] 신규 팀원 가입 시
   - [ ] 총 인원 수 추가
+  - [ ] 유저 모델 내 소속 팀 테이블에 추가
 <pre><code>POST: /user/team/{teamID}</code></pre>
 - [ ] 기존 팀원 탈퇴
   - [ ] 총 인원 수 감소
+  - [ ] 유저 모델 내 소속 팀 or 중요 팀 테이블에서 제거
 <pre><code>DELETE: /user/team/{teamID}</code></pre>
 #### 약간 유저 관련? (유저 모델 내 팀 테이블이 ManyToMany 연결 관계라 유저와 관련이 있다고 생각했음)
 - [ ] 유저가 속해있는 팀 목록 조회
